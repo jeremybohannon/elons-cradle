@@ -13,8 +13,8 @@
 
 <main>
 	<h1>Elon's Cradle</h1>
-	<span>
-		<p>{name}</p>
+	<span class="interaction-container">
+		<p id="name">{name}</p>
 		<button on:click={generateName}>Generate Name</button>
 	</span>
 </main>
@@ -22,14 +22,10 @@
 <style>
 	main {
 		text-align: center;
-		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-    flex-wrap: wrap;
-		height: 100vh;
-		width: 100vw;
+		height: 75%;
+		width: 100%;
 	}
 
 	h1 {
@@ -45,5 +41,20 @@
 		main {
 			max-width: none;
 		}
+	}
+
+	.interaction-container {
+		height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	}
+
+	#name {
+		width: 100%;
+    font-size: 1.5em;
+    color: #89cfef;
 	}
 </style>
