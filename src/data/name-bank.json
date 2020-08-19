@@ -35,6 +35,26 @@
     {
       "name": "SR-17",
       "desc": "Successor to A-12"
+    },
+    {
+      "name": "U-2",
+      "desc": "U.S. Spy Plane"
+    },
+    {
+      "name": "B-52",
+      "desc": "Long-rage heavy bomber"
+    },
+    {
+      "name": "F-16",
+      "desc": "Single-seat single-engine jet fighter"
+    },
+    {
+      "name": "MiG-21",
+      "desc": "Light weight Soviet Union jet fighter"
+    },
+    {
+      "name": "A340",
+      "desc": "Long range jet airliner"
     }
   ]
 }
