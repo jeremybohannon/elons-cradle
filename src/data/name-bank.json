@@ -61,13 +61,13 @@
   "aircraft": [
     {
       "name": "A-12",
-      "desc": "Precursor to SR-17",
+      "desc": "Precursor to SR-71",
       "pronunciation": "A 12"
     },
     {
-      "name": "SR-17",
+      "name": "SR-71",
       "desc": "Successor to A-12",
-      "pronunciation": "Es Are-17"
+      "pronunciation": "Es Are-71"
     },
     {
       "name": "U-2",
