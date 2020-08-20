@@ -1,22 +1,41 @@
 <script>
 	import * as nameBank from './data/name-bank.json'
-	let name = "Generate a name Elon would approve of..."
+	import * as messages from './data/messages.json'
+	let name = ""
+	let compliment = ""
+	let pronunciation = ""
 
 	const getRandomValue = (array) => (
 		array[Math.floor(Math.random() * array.length)]
 	)
 
 	const generateName = () => {
-		name = `${getRandomValue(nameBank.mathSymbols).name} ${getRandomValue(nameBank.elvishSpellings).name} ${getRandomValue(nameBank.aircraft).name}`
+		let mathSymbol = getRandomValue(nameBank.mathSymbols)
+		let elvishSpelling = getRandomValue(nameBank.elvishSpellings)
+		let aircraft = getRandomValue(nameBank.aircraft)
+
+		name = `${mathSymbol.name} ${elvishSpelling.name} ${aircraft.name}`
+		pronunciation = `Pronounced '${mathSymbol.pronunciation} ${elvishSpelling.pronunciation} ${aircraft.pronunciation}'`
+		
+		compliment = getRandomValue(messages.compliment)
 	}
+	
+	const callToAction = getRandomValue(messages.callToAction)
 </script>
 
 <main>
 	<h1>Elon's Cradle</h1>
-	<span class="interaction-container">
-		<p id="name">{name}</p>
-		<button on:click={generateName}>Generate Name</button>
+	<span>
+		<h2>{callToAction}</h2><span>Click below to get your name!</span>
 	</span>
+	<div class="interaction-container">
+		<span class="w100"><p id="name">{name}</p></span>
+		<span class="w100"><p>{pronunciation}</p></span>
+		<span class="w100"><p>{compliment}</p>	</span>
+	</div>
+	<div>
+		<button on:click={generateName}>Generate Name</button>
+	</div>
 </main>
 
 <style>
@@ -24,7 +43,7 @@
 		text-align: center;
 		max-width: 240px;
 		margin: 0 auto;
-		height: 75%;
+		height: 100%;
 		width: 100%;
 	}
 
@@ -35,6 +54,7 @@
 		font-weight: 100;
 		width: 100%;
 		height: fit-content;
+		margin: 0;
 	}
 
 	@media (min-width: 640px) {
@@ -44,7 +64,7 @@
 	}
 
 	.interaction-container {
-		height: 100%;
+		height: 35%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,8 +73,11 @@
 	}
 
 	#name {
-		width: 100%;
-    font-size: 1.5em;
+    font-size: 3em;
     color: #89cfef;
+	}
+
+	.w100 {
+		width: 100%;
 	}
 </style>

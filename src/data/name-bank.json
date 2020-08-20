@@ -2,59 +2,97 @@
   "mathSymbols": [
     {
       "name": "X",
-      "desc": "Unknown Variable"
+      "desc": "Unknown Variable",
+      "pronunciation": "Ex"
     },
     {
       "name": "∆",
-      "desc": "Delta"
+      "desc": "Delta",
+      "pronunciation": "Del-ta"
     },
     {
       "name": "∑",
-      "desc": "Sigma"
+      "desc": "Sigma",
+      "pronunciation": "Sig-ma"
     },
     {
       "name": "π",
-      "desc": "Pi"
+      "desc": "Pi",
+      "pronunciation": "Pie"
     }
   ],
   "elvishSpellings": [
     {
       "name": "Æ",
-      "desc": "Elvish spelling of AI"
+      "desc": "AI",
+      "pronunciation": "Ah"
     },
     {
       "name": "ð",
-      "desc": "Elvish spelling of DogeCoin"
+      "desc": "DogeCoin",
+      "pronunciation": "Dough"
+    },
+    {
+      "name": "ζε",
+      "desc": "Space",
+      "pronunciation": "Zaye"
+    },
+    {
+      "name": "ζλ τκ",
+      "desc": "Cyber Truck",
+      "pronunciation": "Ci Tuk"
+    },
+    {
+      "name": "ʤ",
+      "desc": "Joint",
+      "pronunciation": "Juh"
+    },
+    {
+      "name": "ʨ",
+      "desc": "Future",
+      "pronunciation": "Chu"
+    },
+    {
+      "name": "ɮ",
+      "desc": "Simulation",
+      "pronunciation": "Luh"
     }
   ],
   "aircraft": [
     {
       "name": "A-12",
-      "desc": "Precursor to SR-17"
+      "desc": "Precursor to SR-17",
+      "pronunciation": "A 12"
     },
     {
       "name": "SR-17",
-      "desc": "Successor to A-12"
+      "desc": "Successor to A-12",
+      "pronunciation": "Es Are-17"
     },
     {
       "name": "U-2",
-      "desc": "U.S. Spy Plane"
+      "desc": "U.S. Spy Plane",
+      "pronunciation": "You-2"
     },
     {
       "name": "B-52",
-      "desc": "Long-rage heavy bomber"
+      "desc": "Long-rage heavy bomber",
+      "pronunciation": "Bee-52"
     },
     {
       "name": "F-16",
-      "desc": "Single-seat single-engine jet fighter"
+      "desc": "Single-seat single-engine jet fighter",
+      "pronunciation": "Eff-16"
     },
     {
       "name": "MiG-21",
-      "desc": "Light weight Soviet Union jet fighter"
+      "desc": "Light weight Soviet Union jet fighter",
+      "pronunciation": "Mig-21"
     },
     {
       "name": "A340",
-      "desc": "Long range jet airliner"
+      "desc": "Long range jet airliner",
+      "pronunciation": "A 340"
     }
   ]
 }
